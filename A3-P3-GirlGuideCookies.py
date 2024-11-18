@@ -130,7 +130,7 @@ def main():
         GetGuideInfo(i, guideInfo)
 
     #Show the average number of boxes sold by each guide
-    print(f"The average number of boxes sold by each guide was: {AverageBoxesSold(guideInfo)}")
+    print(f"The average number of boxes sold by each guide was: {AverageBoxesSold(guideInfo):.1f}") #Updated to round average
     print("")
     DeterminePrizes(guideInfo, prizes, numberOfGuides)
     #Display guides and prizes (Optionl extra version where they are ranked)
